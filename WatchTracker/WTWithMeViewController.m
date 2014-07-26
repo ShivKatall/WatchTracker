@@ -31,9 +31,9 @@
     
     WTItem *laptop = [[WTItem alloc] initWithName:@"Laptop"
                                      activeStatus:YES
-                                     withMeStatus:NO
-                                 importanceStatus:High
-                               notificationStatus:TextMessage];
+                                     withMeStatus:YES
+                                 importanceStatus:Low
+                               notificationStatus:None];
     
     WTItem *keys = [[WTItem alloc] initWithName:@"Keys"
                                    activeStatus:YES

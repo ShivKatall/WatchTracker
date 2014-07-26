@@ -21,19 +21,14 @@
 
 @implementation WTItemSettingsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [_statusBubble assignItemToBubble:_item];
+    [self setActiveSwitchStatus];
+    [self setImportanceSwitchStatus];
+    [self setNotificationSwitchStatus];   
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,15 +37,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+# pragma mark - Model Control Code
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)setActiveSwitchStatus
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (_item.active == YES) {
+        [_activeSwitch setSelectedSegmentIndex:0];
+    } else {
+        [_activeSwitch setSelectedSegmentIndex:1];
+    }
 }
-*/
+
+-(void)setImportanceSwitchStatus
+{
+    if (_item.importance == High) {
+        [_importanceSwitch setSelectedSegmentIndex:0];
+    } else if (_item.importance == Low) {
+        [_importanceSwitch setSelectedSegmentIndex:2];
+    } else {
+        [_importanceSwitch setSelectedSegmentIndex:1];
+    }
+}
+
+-(void)setNotificationSwitchStatus
+{
+    if (_item.notification == TextMessage) {
+        [_notificationSwitch setSelectedSegmentIndex:0];
+    } else if (_item.notification == PushNotification) {
+        [_notificationSwitch setSelectedSegmentIndex:1];
+    } else {
+        [_notificationSwitch setSelectedSegmentIndex:2];
+    }
+}
 
 @end
