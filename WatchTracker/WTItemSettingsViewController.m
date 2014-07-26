@@ -7,6 +7,7 @@
 //
 
 #import "WTItemSettingsViewController.h"
+#import "WTWithMeViewController.h"
 #import "WTStatusBubble.h"
 
 
@@ -37,7 +38,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"SaveSegue"]) {
+        WTWithMeViewController *destinationViewController = [segue destinationViewController];
+        
+        [self getActiveSwitchStatus];
+        [self getImportanceSwitchStatus];
+        [self getNotificationSwitchStatus];
+        
+        destinationViewController.laptop = _item;
+    }
+}
+
 # pragma mark - Model Control Code
+
+// Set Status
 
 -(void)setActiveSwitchStatus
 {
@@ -67,6 +88,40 @@
         [_notificationSwitch setSelectedSegmentIndex:1];
     } else {
         [_notificationSwitch setSelectedSegmentIndex:2];
+    }
+}
+
+
+// Get Status
+
+-(void)getActiveSwitchStatus
+{
+    if (_activeSwitch.selectedSegmentIndex == 0) {
+        _item.active = YES;
+    } else {
+        _item.active = NO;
+    }
+}
+
+-(void)getImportanceSwitchStatus
+{
+    if (_importanceSwitch.selectedSegmentIndex == 0) {
+        _item.importance = High;
+    } else if (_importanceSwitch.selectedSegmentIndex == 1) {
+        _item.importance = Medium;
+    } else {
+        _item.importance = Low;
+    }
+}
+
+-(void)getNotificationSwitchStatus
+{
+    if (_notificationSwitch.selectedSegmentIndex == 0) {
+        _item.notification = TextMessage;
+    } else if (_notificationSwitch.selectedSegmentIndex == 1) {
+        _item.notification = PushNotification;
+    } else {
+        _item.notification = None;
     }
 }
 

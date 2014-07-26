@@ -9,7 +9,6 @@
 #import "WTWithMeViewController.h"
 #import "WTItem.h"
 #import "WTDemoItems.h"
-#import "WTStatusBubble.h"
 #import "WTItemSettingsViewController.h"
 
 
@@ -29,46 +28,48 @@
 {
     [super viewDidLoad];
     
-    WTItem *laptop = [[WTItem alloc] initWithName:@"Laptop"
+    _laptop = [[WTItem alloc] initWithName:@"Laptop"
                                      activeStatus:YES
                                      withMeStatus:YES
                                  importanceStatus:Low
                                notificationStatus:None];
     
-    WTItem *keys = [[WTItem alloc] initWithName:@"Keys"
+    _keys = [[WTItem alloc] initWithName:@"Keys"
                                    activeStatus:YES
                                    withMeStatus:YES
                                importanceStatus:Medium
                              notificationStatus:PushNotification];
     
-    WTItem *glasses = [[WTItem alloc] initWithName:@"Glasses"
+    _glasses = [[WTItem alloc] initWithName:@"Glasses"
                                       activeStatus:NO
                                       withMeStatus:NO
                                   importanceStatus:Low
                                 notificationStatus:None];
     
-    WTItem *wallet = [[WTItem alloc] initWithName:@"Wallet"
+    _wallet = [[WTItem alloc] initWithName:@"Wallet"
                                      activeStatus:YES
                                      withMeStatus:NO
                                  importanceStatus:Medium
                                notificationStatus:PushNotification];
     
-    WTItem *baby = [[WTItem alloc] initWithName:@"Baby"
+    _baby = [[WTItem alloc] initWithName:@"Baby"
                                    activeStatus:YES
                                    withMeStatus:NO
                                importanceStatus:High
                              notificationStatus:TextMessage];
     
-    [_buttonOne assignItemToBubble:laptop];
-    [_buttonTwo assignItemToBubble:keys];
-    [_buttonThree assignItemToBubble:glasses];
-    [_buttonFour assignItemToBubble:wallet];
-    [_buttonFive assignItemToBubble:baby];
+
 
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
+    [_buttonOne assignItemToBubble:_laptop];
+    [_buttonTwo assignItemToBubble:_keys];
+    [_buttonThree assignItemToBubble:_glasses];
+    [_buttonFour assignItemToBubble:_wallet];
+    [_buttonFive assignItemToBubble:_baby];
     
 }
 
@@ -84,9 +85,8 @@
     if ([[segue identifier] isEqualToString:@"BubbleDetailSegue"]) {
         WTItemSettingsViewController *destinationViewController = [segue destinationViewController];
         
-        destinationViewController.item = _buttonOne.item;
+        destinationViewController.item = _laptop;
     }
-    
 }
 
 @end

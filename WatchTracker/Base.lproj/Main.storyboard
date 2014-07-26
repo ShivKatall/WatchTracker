@@ -170,7 +170,13 @@
                             <constraint firstItem="OrU-cd-8RJ" firstAttribute="leading" secondItem="S05-n9-qI8" secondAttribute="leading" id="rda-l5-rsV"/>
                         </constraints>
                     </scrollView>
-                    <navigationItem key="navigationItem" id="9Fn-eV-DZX"/>
+                    <navigationItem key="navigationItem" id="9Fn-eV-DZX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hbh-Ym-Qv0">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SaveSegue" id="lCe-VU-H1m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activeSwitch" destination="lxW-if-stI" id="ToS-5W-KJY"/>
                         <outlet property="importanceSwitch" destination="h2i-Wo-53A" id="om6-Vc-hzz"/>
@@ -180,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njz-cw-GRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182" y="70"/>
+            <point key="canvasLocation" x="1162" y="13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0nx-5r-sYC">
@@ -209,4 +215,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="lCe-VU-H1m"/>
+    </inferredMetricsTieBreakers>
 </document>

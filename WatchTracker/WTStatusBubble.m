@@ -19,17 +19,17 @@
 -(void)refreshBubble {
     [self setTitle:(_item.name) forState:UIControlStateNormal];
     
-    if (_item.active == NO) {
-        [self setEnabled:NO];
-    } else if (_item.active == YES) {
-        [self setEnabled:YES];
-    }
-    
-    if (_item.withMe == YES) {
-        [self setBackgroundImage:[UIImage imageNamed:@"button_blank_green_01"]
+    if (_item.active == YES) {
+        if (_item.withMe == YES) {
+            [self setBackgroundImage:[UIImage imageNamed:@"button_blank_green_01"]
+                            forState:UIControlStateNormal];
+        } else if (_item.withMe == NO) {
+            [self setBackgroundImage:[UIImage imageNamed:@"button_blank_red_01"]
+                            forState:UIControlStateNormal];
+        }
+    } else {
+        [self setBackgroundImage:[UIImage imageNamed:@"button_blank_blue_01"]
                         forState:UIControlStateNormal];
-    } else if (_item.withMe == NO) {
-        [self setBackgroundImage:[UIImage imageNamed:@"button_blank_red_01"] forState:UIControlStateNormal];
     }
 }
 

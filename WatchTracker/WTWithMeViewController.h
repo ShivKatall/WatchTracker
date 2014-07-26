@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WTStatusBubble.h"
 
 @interface WTWithMeViewController : UIViewController
+
+@property (nonatomic, strong) WTItem *laptop;
+@property (nonatomic, strong) WTItem *keys;
+@property (nonatomic, strong) WTItem *glasses;
+@property (nonatomic, strong) WTItem *wallet;
+@property (nonatomic, strong) WTItem *baby;
 
 @end
