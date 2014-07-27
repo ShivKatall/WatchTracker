@@ -53,7 +53,7 @@
     if ([[segue identifier] isEqualToString:@"saveExitSegue"]) {
         WTWithMeViewController *destinationViewController = [segue destinationViewController];
 
-        destinationViewController.laptop = _item;
+        destinationViewController.camera = _item;
     }
 }
 

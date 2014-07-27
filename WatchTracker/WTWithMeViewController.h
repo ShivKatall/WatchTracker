@@ -11,7 +11,7 @@
 
 @interface WTWithMeViewController : UIViewController
 
-@property (nonatomic, strong) WTItem *laptop;
+@property (nonatomic, strong) WTItem *camera;
 @property (nonatomic, strong) WTItem *keys;
 @property (nonatomic, strong) WTItem *glasses;
 @property (nonatomic, strong) WTItem *wallet;

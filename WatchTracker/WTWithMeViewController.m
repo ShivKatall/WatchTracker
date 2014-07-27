@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    _laptop = [[WTItem alloc] initWithName:@"Laptop"
+    _camera = [[WTItem alloc] initWithName:@"Camera"
                                      activeStatus:YES
                                      withMeStatus:YES
                                  importanceStatus:Low
@@ -65,7 +65,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [_buttonOne assignItemToBubble:_laptop];
+    [_buttonOne assignItemToBubble:_camera];
     [_buttonTwo assignItemToBubble:_keys];
     [_buttonThree assignItemToBubble:_glasses];
     [_buttonFour assignItemToBubble:_wallet];
@@ -85,7 +85,7 @@
     if ([[segue identifier] isEqualToString:@"BubbleDetailSegue"]) {
         WTItemSettingsViewController *destinationViewController = [segue destinationViewController];
         
-        destinationViewController.item = _laptop;
+        destinationViewController.item = _camera;
     }
 }
 
