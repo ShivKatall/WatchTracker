@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C336CAA198496E100103704 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C336CA9198496E100103704 /* CameraViewController.m */; };
 		3DC4F830198416C500CA8F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F82F198416C500CA8F79 /* Foundation.framework */; };
 		3DC4F832198416C500CA8F79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F831198416C500CA8F79 /* CoreGraphics.framework */; };
 		3DC4F834198416C500CA8F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F833198416C500CA8F79 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C336CA8198496E100103704 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		2C336CA9198496E100103704 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		3DC4F82C198416C500CA8F79 /* WatchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC4F82F198416C500CA8F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DC4F831198416C500CA8F79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +176,8 @@
 				3DC4F86A19841DD000CA8F79 /* WTItemSettingsViewController.h */,
 				3DC4F86B19841DD000CA8F79 /* WTItemSettingsViewController.m */,
 				3DC4F847198416C500CA8F79 /* Images.xcassets */,
+				2C336CA8198496E100103704 /* CameraViewController.h */,
+				2C336CA9198496E100103704 /* CameraViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC4F83C198416C500CA8F79 /* main.m in Sources */,
+				2C336CAA198496E100103704 /* CameraViewController.m in Sources */,
 				3DC4F8731984426400CA8F79 /* WTStatusBubble.m in Sources */,
 				3DC4F86919841CCF00CA8F79 /* WTItem.m in Sources */,
 				3DC4F86F1984217200CA8F79 /* WTDemoItems.m in Sources */,
@@ -507,6 +513,7 @@
 				3DC4F860198416C500CA8F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DC4F861198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				3DC4F863198416C500CA8F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -92,28 +92,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrU-cd-8RJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW2-vp-e6C" customClass="WTStatusBubble">
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW2-vp-e6C">
                                         <rect key="frame" x="74" y="122" width="172" height="172"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" backgroundImage="camera 1">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="camera:" destination="F6G-7a-hI3" eventType="touchUpInside" id="W4S-xc-PrM"/>
+                                            <action selector="selectPhotos:" destination="F6G-7a-hI3" eventType="touchUpInside" id="wrc-l4-jNZ"/>
+                                        </connections>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="21l-rg-A8D">
-                                        <rect key="frame" x="45" y="49" width="201" height="29"/>
-                                        <segments>
-                                            <segment title="Text"/>
-                                            <segment title="Push"/>
-                                            <segment title="None"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-da-IQQ">
-                                        <rect key="frame" x="40" y="20" width="93" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-Zb-S9V">
                                         <rect key="frame" x="133" y="423" width="55" height="29"/>
                                         <state key="normal" image="on">
@@ -179,7 +169,8 @@
                     </scrollView>
                     <navigationItem key="navigationItem" id="9Fn-eV-DZX"/>
                     <connections>
-                        <outlet property="notificationSwitch" destination="21l-rg-A8D" id="bJU-Nq-It9"/>
+                        <outlet property="itemImage" destination="tW2-vp-e6C" id="Xnf-wN-5Qi"/>
+                        <outlet property="selectPhotos" destination="tW2-vp-e6C" id="f2W-og-xGV"/>
                         <outlet property="statusBubble" destination="tW2-vp-e6C" id="nCS-E8-iw2"/>
                     </connections>
                 </viewController>
