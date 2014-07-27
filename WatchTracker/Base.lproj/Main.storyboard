@@ -122,7 +122,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMF-E2-5Cn">
                                         <rect key="frame" x="67" y="460" width="187" height="53"/>
-                                        <state key="normal" title="Save" image="Add 1">
+                                        <state key="normal" title="Save" image="Save 1">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="Add 2"/>
@@ -210,11 +210,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add 1" width="370" height="87"/>
         <image name="Add 2" width="370" height="87"/>
         <image name="Back arrow" width="19" height="35"/>
         <image name="C-OFF" width="84" height="84"/>
         <image name="Orange" width="368" height="140"/>
+        <image name="Save 1" width="371" height="87"/>
         <image name="camera 1" width="372" height="372"/>
         <image name="off 2" width="99" height="56"/>
         <image name="off1" width="99" height="57"/>
