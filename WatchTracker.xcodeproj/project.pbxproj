@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DC4F830198416C500CA8F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F82F198416C500CA8F79 /* Foundation.framework */; };
+		3DC4F832198416C500CA8F79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F831198416C500CA8F79 /* CoreGraphics.framework */; };
+		3DC4F834198416C500CA8F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F833198416C500CA8F79 /* UIKit.framework */; };
+		3DC4F83A198416C500CA8F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4F838198416C500CA8F79 /* InfoPlist.strings */; };
+		3DC4F83C198416C500CA8F79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F83B198416C500CA8F79 /* main.m */; };
+		3DC4F840198416C500CA8F79 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F83F198416C500CA8F79 /* WTAppDelegate.m */; };
+		3DC4F843198416C500CA8F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4F841198416C500CA8F79 /* Main.storyboard */; };
+		3DC4F846198416C500CA8F79 /* WTWithMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F845198416C500CA8F79 /* WTWithMeViewController.m */; };
+		3DC4F848198416C500CA8F79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4F847198416C500CA8F79 /* Images.xcassets */; };
+		3DC4F84F198416C500CA8F79 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F84E198416C500CA8F79 /* XCTest.framework */; };
+		3DC4F850198416C500CA8F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F82F198416C500CA8F79 /* Foundation.framework */; };
+		3DC4F851198416C500CA8F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4F833198416C500CA8F79 /* UIKit.framework */; };
+		3DC4F859198416C500CA8F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC4F857198416C500CA8F79 /* InfoPlist.strings */; };
+		3DC4F85B198416C500CA8F79 /* WatchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F85A198416C500CA8F79 /* WatchTrackerTests.m */; };
+		3DC4F86919841CCF00CA8F79 /* WTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F86819841CCF00CA8F79 /* WTItem.m */; };
+		3DC4F86C19841DD000CA8F79 /* WTItemSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F86B19841DD000CA8F79 /* WTItemSettingsViewController.m */; };
+		3DC4F86F1984217200CA8F79 /* WTDemoItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F86E1984217200CA8F79 /* WTDemoItems.m */; };
+		3DC4F8731984426400CA8F79 /* WTStatusBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4F8721984426400CA8F79 /* WTStatusBubble.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC4F852198416C500CA8F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC4F824198416C500CA8F79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC4F82B198416C500CA8F79;
+			remoteInfo = WatchTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DC4F82C198416C500CA8F79 /* WatchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC4F82F198416C500CA8F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DC4F831198416C500CA8F79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DC4F833198416C500CA8F79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DC4F837198416C500CA8F79 /* WatchTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WatchTracker-Info.plist"; sourceTree = "<group>"; };
+		3DC4F839198416C500CA8F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DC4F83B198416C500CA8F79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC4F83D198416C500CA8F79 /* WatchTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchTracker-Prefix.pch"; sourceTree = "<group>"; };
+		3DC4F83E198416C500CA8F79 /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		3DC4F83F198416C500CA8F79 /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		3DC4F842198416C500CA8F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC4F844198416C500CA8F79 /* WTWithMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWithMeViewController.h; sourceTree = "<group>"; };
+		3DC4F845198416C500CA8F79 /* WTWithMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWithMeViewController.m; sourceTree = "<group>"; };
+		3DC4F847198416C500CA8F79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DC4F84D198416C500CA8F79 /* WatchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC4F84E198416C500CA8F79 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DC4F856198416C500CA8F79 /* WatchTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WatchTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		3DC4F858198416C500CA8F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DC4F85A198416C500CA8F79 /* WatchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchTrackerTests.m; sourceTree = "<group>"; };
+		3DC4F86719841CCF00CA8F79 /* WTItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTItem.h; sourceTree = "<group>"; };
+		3DC4F86819841CCF00CA8F79 /* WTItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTItem.m; sourceTree = "<group>"; };
+		3DC4F86A19841DD000CA8F79 /* WTItemSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTItemSettingsViewController.h; sourceTree = "<group>"; };
+		3DC4F86B19841DD000CA8F79 /* WTItemSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTItemSettingsViewController.m; sourceTree = "<group>"; };
+		3DC4F86D1984217200CA8F79 /* WTDemoItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDemoItems.h; sourceTree = "<group>"; };
+		3DC4F86E1984217200CA8F79 /* WTDemoItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDemoItems.m; sourceTree = "<group>"; };
+		3DC4F870198424E700CA8F79 /* WTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTConstants.h; sourceTree = "<group>"; };
+		3DC4F8711984426400CA8F79 /* WTStatusBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStatusBubble.h; sourceTree = "<group>"; };
+		3DC4F8721984426400CA8F79 /* WTStatusBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusBubble.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC4F829198416C500CA8F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F832198416C500CA8F79 /* CoreGraphics.framework in Frameworks */,
+				3DC4F834198416C500CA8F79 /* UIKit.framework in Frameworks */,
+				3DC4F830198416C500CA8F79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4F84A198416C500CA8F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F84F198416C500CA8F79 /* XCTest.framework in Frameworks */,
+				3DC4F851198416C500CA8F79 /* UIKit.framework in Frameworks */,
+				3DC4F850198416C500CA8F79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC4F823198416C500CA8F79 = {
+			isa = PBXGroup;
+			children = (
+				3DC4F835198416C500CA8F79 /* WatchTracker */,
+				3DC4F854198416C500CA8F79 /* WatchTrackerTests */,
+				3DC4F82E198416C500CA8F79 /* Frameworks */,
+				3DC4F82D198416C500CA8F79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC4F82D198416C500CA8F79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F82C198416C500CA8F79 /* WatchTracker.app */,
+				3DC4F84D198416C500CA8F79 /* WatchTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC4F82E198416C500CA8F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F82F198416C500CA8F79 /* Foundation.framework */,
+				3DC4F831198416C500CA8F79 /* CoreGraphics.framework */,
+				3DC4F833198416C500CA8F79 /* UIKit.framework */,
+				3DC4F84E198416C500CA8F79 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC4F835198416C500CA8F79 /* WatchTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F8661984170300CA8F79 /* Model */,
+				3DC4F865198416F500CA8F79 /* Controller */,
+				3DC4F864198416DE00CA8F79 /* View */,
+				3DC4F836198416C500CA8F79 /* Supporting Files */,
+			);
+			path = WatchTracker;
+			sourceTree = "<group>";
+		};
+		3DC4F836198416C500CA8F79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F837198416C500CA8F79 /* WatchTracker-Info.plist */,
+				3DC4F838198416C500CA8F79 /* InfoPlist.strings */,
+				3DC4F83B198416C500CA8F79 /* main.m */,
+				3DC4F83D198416C500CA8F79 /* WatchTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC4F854198416C500CA8F79 /* WatchTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F85A198416C500CA8F79 /* WatchTrackerTests.m */,
+				3DC4F855198416C500CA8F79 /* Supporting Files */,
+			);
+			path = WatchTrackerTests;
+			sourceTree = "<group>";
+		};
+		3DC4F855198416C500CA8F79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F856198416C500CA8F79 /* WatchTrackerTests-Info.plist */,
+				3DC4F857198416C500CA8F79 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DC4F864198416DE00CA8F79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F841198416C500CA8F79 /* Main.storyboard */,
+				3DC4F844198416C500CA8F79 /* WTWithMeViewController.h */,
+				3DC4F845198416C500CA8F79 /* WTWithMeViewController.m */,
+				3DC4F8711984426400CA8F79 /* WTStatusBubble.h */,
+				3DC4F8721984426400CA8F79 /* WTStatusBubble.m */,
+				3DC4F86A19841DD000CA8F79 /* WTItemSettingsViewController.h */,
+				3DC4F86B19841DD000CA8F79 /* WTItemSettingsViewController.m */,
+				3DC4F847198416C500CA8F79 /* Images.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3DC4F865198416F500CA8F79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F83E198416C500CA8F79 /* WTAppDelegate.h */,
+				3DC4F83F198416C500CA8F79 /* WTAppDelegate.m */,
+				3DC4F86D1984217200CA8F79 /* WTDemoItems.h */,
+				3DC4F86E1984217200CA8F79 /* WTDemoItems.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3DC4F8661984170300CA8F79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DC4F870198424E700CA8F79 /* WTConstants.h */,
+				3DC4F86719841CCF00CA8F79 /* WTItem.h */,
+				3DC4F86819841CCF00CA8F79 /* WTItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC4F82B198416C500CA8F79 /* WatchTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC4F85E198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTracker" */;
+			buildPhases = (
+				3DC4F828198416C500CA8F79 /* Sources */,
+				3DC4F829198416C500CA8F79 /* Frameworks */,
+				3DC4F82A198416C500CA8F79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchTracker;
+			productName = WatchTracker;
+			productReference = 3DC4F82C198416C500CA8F79 /* WatchTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC4F84C198416C500CA8F79 /* WatchTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC4F861198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTrackerTests" */;
+			buildPhases = (
+				3DC4F849198416C500CA8F79 /* Sources */,
+				3DC4F84A198416C500CA8F79 /* Frameworks */,
+				3DC4F84B198416C500CA8F79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC4F853198416C500CA8F79 /* PBXTargetDependency */,
+			);
+			name = WatchTrackerTests;
+			productName = WatchTrackerTests;
+			productReference = 3DC4F84D198416C500CA8F79 /* WatchTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC4F824198416C500CA8F79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = WatchTracker;
+				TargetAttributes = {
+					3DC4F84C198416C500CA8F79 = {
+						TestTargetID = 3DC4F82B198416C500CA8F79;
+					};
+				};
+			};
+			buildConfigurationList = 3DC4F827198416C500CA8F79 /* Build configuration list for PBXProject "WatchTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC4F823198416C500CA8F79;
+			productRefGroup = 3DC4F82D198416C500CA8F79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC4F82B198416C500CA8F79 /* WatchTracker */,
+				3DC4F84C198416C500CA8F79 /* WatchTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC4F82A198416C500CA8F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F848198416C500CA8F79 /* Images.xcassets in Resources */,
+				3DC4F83A198416C500CA8F79 /* InfoPlist.strings in Resources */,
+				3DC4F843198416C500CA8F79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4F84B198416C500CA8F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F859198416C500CA8F79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC4F828198416C500CA8F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F83C198416C500CA8F79 /* main.m in Sources */,
+				3DC4F8731984426400CA8F79 /* WTStatusBubble.m in Sources */,
+				3DC4F86919841CCF00CA8F79 /* WTItem.m in Sources */,
+				3DC4F86F1984217200CA8F79 /* WTDemoItems.m in Sources */,
+				3DC4F86C19841DD000CA8F79 /* WTItemSettingsViewController.m in Sources */,
+				3DC4F840198416C500CA8F79 /* WTAppDelegate.m in Sources */,
+				3DC4F846198416C500CA8F79 /* WTWithMeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC4F849198416C500CA8F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC4F85B198416C500CA8F79 /* WatchTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC4F853198416C500CA8F79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC4F82B198416C500CA8F79 /* WatchTracker */;
+			targetProxy = 3DC4F852198416C500CA8F79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC4F838198416C500CA8F79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC4F839198416C500CA8F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DC4F841198416C500CA8F79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC4F842198416C500CA8F79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC4F857198416C500CA8F79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC4F858198416C500CA8F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DC4F85C198416C500CA8F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DC4F85D198416C500CA8F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC4F85F198416C500CA8F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchTracker/WatchTracker-Prefix.pch";
+				INFOPLIST_FILE = "WatchTracker/WatchTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DC4F860198416C500CA8F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchTracker/WatchTracker-Prefix.pch";
+				INFOPLIST_FILE = "WatchTracker/WatchTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DC4F862198416C500CA8F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WatchTracker.app/WatchTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchTracker/WatchTracker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchTrackerTests/WatchTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3DC4F863198416C500CA8F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WatchTracker.app/WatchTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchTracker/WatchTracker-Prefix.pch";
+				INFOPLIST_FILE = "WatchTrackerTests/WatchTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC4F827198416C500CA8F79 /* Build configuration list for PBXProject "WatchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4F85C198416C500CA8F79 /* Debug */,
+				3DC4F85D198416C500CA8F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC4F85E198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4F85F198416C500CA8F79 /* Debug */,
+				3DC4F860198416C500CA8F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC4F861198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC4F862198416C500CA8F79 /* Debug */,
+				3DC4F863198416C500CA8F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC4F824198416C500CA8F79 /* Project object */;
+}
