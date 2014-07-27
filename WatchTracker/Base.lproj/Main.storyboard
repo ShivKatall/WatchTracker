@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kR5-BF-cyr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kR5-BF-cyr">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--With Me View Controller-->
@@ -22,7 +21,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6It-Gd-QZz" customClass="WTStatusBubble">
                                         <rect key="frame" x="120" y="118" width="80" height="80"/>
-                                        <state key="normal" title="Item" backgroundImage="button_blank_red_01">
+                                        <state key="normal" backgroundImage="C-OFF">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -32,28 +31,28 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-e7-WQ0" customClass="WTStatusBubble">
                                         <rect key="frame" x="220" y="195" width="80" height="80"/>
-                                        <state key="normal" title="Item" backgroundImage="button_blank_red_01">
+                                        <state key="normal" backgroundImage="C-OFF">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhJ-pI-f1M" customClass="WTStatusBubble">
                                         <rect key="frame" x="180" y="302" width="80" height="80"/>
-                                        <state key="normal" title="Item" backgroundImage="button_blank_red_01">
+                                        <state key="normal" backgroundImage="C-OFF">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-VF-Qa6" customClass="WTStatusBubble">
                                         <rect key="frame" x="64" y="302" width="80" height="80"/>
-                                        <state key="normal" title="Item" backgroundImage="button_blank_red_01">
+                                        <state key="normal" backgroundImage="C-OFF">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9m7-SR-3ym" customClass="WTStatusBubble">
                                         <rect key="frame" x="20" y="195" width="80" height="80"/>
-                                        <state key="normal" title="Item" backgroundImage="button_blank_red_01">
+                                        <state key="normal" backgroundImage="C-OFF">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -178,13 +177,7 @@
                             <constraint firstItem="OrU-cd-8RJ" firstAttribute="leading" secondItem="S05-n9-qI8" secondAttribute="leading" id="rda-l5-rsV"/>
                         </constraints>
                     </scrollView>
-                    <navigationItem key="navigationItem" id="9Fn-eV-DZX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hbh-Ym-Qv0">
-                            <connections>
-                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SaveSegue" id="lCe-VU-H1m"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="9Fn-eV-DZX"/>
                     <connections>
                         <outlet property="notificationSwitch" destination="21l-rg-A8D" id="bJU-Nq-It9"/>
                         <outlet property="statusBubble" destination="tW2-vp-e6C" id="nCS-E8-iw2"/>
@@ -216,8 +209,8 @@
     <resources>
         <image name="Add 1" width="370" height="87"/>
         <image name="Add 2" width="370" height="87"/>
+        <image name="C-OFF" width="84" height="84"/>
         <image name="Orange" width="368" height="140"/>
-        <image name="button_blank_red_01" width="128" height="128"/>
         <image name="camera 1" width="372" height="372"/>
         <image name="off 2" width="99" height="56"/>
         <image name="off1" width="99" height="57"/>
@@ -229,7 +222,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="lCe-VU-H1m"/>
-    </inferredMetricsTieBreakers>
 </document>
