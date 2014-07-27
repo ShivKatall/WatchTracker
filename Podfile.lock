@@ -1,0 +1,10 @@
+PODS:
+  - TJLButtonView (1.0.1)
+
+DEPENDENCIES:
+  - TJLButtonView (~> 1.0)
+
+SPEC CHECKSUMS:
+  TJLButtonView: db3ca93e4c651fcaf390238fb4485635f6df35b9
+
+COCOAPODS: 0.33.1

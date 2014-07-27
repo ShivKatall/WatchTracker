@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FAA8FA01-48D8-4E5B-839C-38B4233C9EE1</string>
+	<string>BF0D2923-908F-4BD8-8121-75C3C0D72D3A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WatchTracker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>ssh://github.com/ShivKatall/WatchTracker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>WatchTracker.xcodeproj/project.xcworkspace</string>
+	<string>WatchTracker.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D3E014FC-FAE3-47A4-ACD1-AE8CF6FA4D53</key>
-		<string>../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/ShivKatall/WatchTracker.git</string>
