@@ -17,20 +17,20 @@
 }
 
 -(void)refreshBubble {
-    [self setTitle:(_item.name) forState:UIControlStateNormal];
-    
-    if (_item.active == YES) {
-        if (_item.withMe == YES) {
-            [self setBackgroundImage:[UIImage imageNamed:@"C-ON"]
-                            forState:UIControlStateNormal];
-        } else if (_item.withMe == NO) {
-            [self setBackgroundImage:[UIImage imageNamed:@"C-OFF"]
-                            forState:UIControlStateNormal];
-        }
-    } else {
-        [self setBackgroundImage:[UIImage imageNamed:@"C-Inactive"]
-                        forState:UIControlStateNormal];
-    }
+//    [self setTitle:(_item.name) forState:UIControlStateNormal];
+//
+//    if (_item.active == YES) {
+//        if (_item.withMe == YES) {
+//            [self setBackgroundImage:[UIImage imageNamed:@"C-ON"]
+//                            forState:UIControlStateNormal];
+//        } else if (_item.withMe == NO) {
+//            [self setBackgroundImage:[UIImage imageNamed:@"C-OFF"]
+//                            forState:UIControlStateNormal];
+//        }
+//    } else {
+//        [self setBackgroundImage:[UIImage imageNamed:@"C-Inactive"]
+//                        forState:UIControlStateNormal];
+//    }
 }
 
 @end
