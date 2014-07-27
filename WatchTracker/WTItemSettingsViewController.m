@@ -13,12 +13,20 @@
 
 @interface WTItemSettingsViewController ()
 
+<<<<<<< HEAD
 @property (weak, nonatomic) IBOutlet UIButton *onButton;
 @property (weak, nonatomic) IBOutlet UIButton *offButton;
 
 @end
 
 
+=======
+@property (weak, nonatomic) IBOutlet WTStatusBubble *statusBubble;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *notificationSwitch;
+
+@end
+
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 @implementation WTItemSettingsViewController
 
 - (void)viewDidLoad
@@ -35,6 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+<<<<<<< HEAD
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -50,8 +59,6 @@
     if(_item.itemImage != nil){
     [_itemImage setBackgroundImage: _item.itemImage forState:UIControlStateNormal];
     }
-    
-}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -82,6 +89,47 @@
 
 
 - (IBAction)selectPhotos:(id)sender {
+=======
+    if ([[segue identifier] isEqualToString:@"SaveSegue"]) {
+        WTWithMeViewController *destinationViewController = [segue destinationViewController];
+        
+        [self getNotificationSwitchStatus];
+        
+        destinationViewController.laptop = _item;
+    }
+}
+
+# pragma mark - Model Control Code
+
+// Set Status
+
+-(void)setNotificationSwitchStatus
+{
+    if (_item.notification == TextMessage) {
+        [_notificationSwitch setSelectedSegmentIndex:0];
+    } else if (_item.notification == PushNotification) {
+        [_notificationSwitch setSelectedSegmentIndex:1];
+    } else {
+        [_notificationSwitch setSelectedSegmentIndex:2];
+    }
+}
+
+
+// Get Status
+
+-(void)getNotificationSwitchStatus
+{
+    if (_notificationSwitch.selectedSegmentIndex == 0) {
+        _item.notification = TextMessage;
+    } else if (_notificationSwitch.selectedSegmentIndex == 1) {
+        _item.notification = PushNotification;
+    } else {
+        _item.notification = None;
+    }
+}
+
+-(void)selectPhotos:(id)sender{
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
@@ -90,6 +138,7 @@
     [self presentViewController:picker animated:YES completion:NULL];
 }
 
+<<<<<<< HEAD
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     _image = info[UIImagePickerControllerEditedImage];
@@ -104,4 +153,9 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+=======
+
+
+
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 @end

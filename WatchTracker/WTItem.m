@@ -14,8 +14,12 @@
      activeStatus:(BOOL)active
      withMeStatus:(BOOL)withMe
  importanceStatus:(Importance)importance
+<<<<<<< HEAD
 notificationStatus:(Notification)notification
         itemImage:(UIImage*)image; {
+=======
+notificationStatus:(Notification)notification; {
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
     self = [super init];
     
@@ -25,7 +29,10 @@ notificationStatus:(Notification)notification
         self.withMe = withMe;
         self.importance = importance;
         self.notification = notification;
+<<<<<<< HEAD
         self.itemImage = image;
+=======
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     }
     return self;
 }

@@ -32,36 +32,56 @@
                                      activeStatus:YES
                                      withMeStatus:YES
                                  importanceStatus:Low
+<<<<<<< HEAD
                                notificationStatus:None
                                 itemImage:nil];
+=======
+                               notificationStatus:None];
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
     _keys = [[WTItem alloc] initWithName:@"Keys"
                                    activeStatus:YES
                                    withMeStatus:YES
                                importanceStatus:Medium
+<<<<<<< HEAD
                              notificationStatus:PushNotification
                                itemImage:nil];
+=======
+                             notificationStatus:PushNotification];
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
     _glasses = [[WTItem alloc] initWithName:@"Glasses"
                                       activeStatus:NO
                                       withMeStatus:NO
                                   importanceStatus:Low
+<<<<<<< HEAD
                                 notificationStatus:None
                                 itemImage:nil];
+=======
+                                notificationStatus:None];
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
     _wallet = [[WTItem alloc] initWithName:@"Wallet"
                                      activeStatus:YES
                                      withMeStatus:NO
                                  importanceStatus:Medium
+<<<<<<< HEAD
                                notificationStatus:PushNotification
                                 itemImage:nil];
+=======
+                               notificationStatus:PushNotification];
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
     _baby = [[WTItem alloc] initWithName:@"Baby"
                                    activeStatus:YES
                                    withMeStatus:NO
                                importanceStatus:High
+<<<<<<< HEAD
                              notificationStatus:TextMessage
                             itemImage:nil];
+=======
+                             notificationStatus:TextMessage];
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
     
 
 
@@ -94,6 +114,7 @@
     }
 }
 
+<<<<<<< HEAD
 #pragma mark - Empty Segue Methods
 
 -(IBAction)backExitSegue:(UIStoryboardSegue *)sender
@@ -106,4 +127,6 @@
     // Empty method for Exit Segue functionality.
 }
 
+=======
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 @end

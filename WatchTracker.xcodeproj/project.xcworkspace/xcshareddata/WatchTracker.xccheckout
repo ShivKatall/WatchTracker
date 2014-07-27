@@ -5,18 +5,28 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>4F9AD3A3-9EAB-4535-ADEB-C5A0DF3ED33C</string>
+=======
+	<string>E0E02D12-2AE1-4F60-A7A1-F524D12527FD</string>
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 	<key>IDESourceControlProjectName</key>
 	<string>WatchTracker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>EB43666A-3CAE-4F19-8921-8A984C415191</key>
 		<string>https://github.com/htjohn/WatchTracker.git</string>
+=======
+		<key>1857AAF1-D36C-429F-8E4B-F76A1498A8FA</key>
+		<string>https://github.com/ShivKatall/WatchTracker.git</string>
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WatchTracker.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>EB43666A-3CAE-4F19-8921-8A984C415191</key>
 		<string>../..</string>
 	</dict>
@@ -26,13 +36,28 @@
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>EB43666A-3CAE-4F19-8921-8A984C415191</string>
+=======
+		<key>1857AAF1-D36C-429F-8E4B-F76A1498A8FA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ShivKatall/WatchTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1857AAF1-D36C-429F-8E4B-F76A1498A8FA</string>
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>EB43666A-3CAE-4F19-8921-8A984C415191</string>
+=======
+			<string>1857AAF1-D36C-429F-8E4B-F76A1498A8FA</string>
+>>>>>>> 2f32c379650d36b143d02bd7a00aefa931b17fda
 			<key>IDESourceControlWCCName</key>
 			<string>WatchTracker</string>
 		</dict>
