@@ -21,14 +21,14 @@
     
     if (_item.active == YES) {
         if (_item.withMe == YES) {
-            [self setBackgroundImage:[UIImage imageNamed:@"button_blank_green_01"]
+            [self setBackgroundImage:[UIImage imageNamed:@"C-ON"]
                             forState:UIControlStateNormal];
         } else if (_item.withMe == NO) {
-            [self setBackgroundImage:[UIImage imageNamed:@"button_blank_red_01"]
+            [self setBackgroundImage:[UIImage imageNamed:@"C-OFF"]
                             forState:UIControlStateNormal];
         }
     } else {
-        [self setBackgroundImage:[UIImage imageNamed:@"button_blank_blue_01"]
+        [self setBackgroundImage:[UIImage imageNamed:@"C-Inactive"]
                         forState:UIControlStateNormal];
     }
 }
