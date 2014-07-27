@@ -10,7 +10,7 @@
 #import "WTItem.h"
 
 
-@interface WTItemSettingsViewController : UIViewController
+@interface WTItemSettingsViewController : UIViewController <UINavigationBarDelegate>
 
 @property (nonatomic, strong) WTItem *item;
 

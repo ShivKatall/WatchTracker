@@ -507,6 +507,7 @@
 				3DC4F860198416C500CA8F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DC4F861198416C500CA8F79 /* Build configuration list for PBXNativeTarget "WatchTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				3DC4F863198416C500CA8F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
