@@ -13,10 +13,11 @@
 
 @interface WTItemSettingsViewController ()
 
-@property (weak, nonatomic) IBOutlet WTStatusBubble *statusBubble;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *notificationSwitch;
+@property (weak, nonatomic) IBOutlet UIButton *onButton;
+@property (weak, nonatomic) IBOutlet UIButton *offButton;
 
 @end
+
 
 @implementation WTItemSettingsViewController
 
@@ -24,15 +25,8 @@
 {
     [super viewDidLoad];
 
-    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back-button-image"]];
-    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back-button-image"]];
-    
-    
-    
-    [_statusBubble assignItemToBubble:_item];
-
-    [self setNotificationSwitchStatus];
-    
+    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"Back arrow"]];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"Back arrow"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,49 +35,43 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillDisappear:(BOOL)animated
+-(void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
     
+    if (_item.active == YES) {
+        _onButton.selected = YES;
+        _offButton.selected = NO;
+    } else {
+        _onButton.selected = NO;
+        _offButton.selected = YES;
+    }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"SaveSegue"]) {
+    if ([[segue identifier] isEqualToString:@"saveExitSegue"]) {
         WTWithMeViewController *destinationViewController = [segue destinationViewController];
-        
-        [self getNotificationSwitchStatus];
-        
+
         destinationViewController.laptop = _item;
     }
 }
 
-# pragma mark - Model Control Code
+#pragma mark - Active Status Code
 
-// Set Status
+- (IBAction)onButtonPressed:(id)sender {
+    _item.active = YES;
+    _onButton.selected = YES;
+    _offButton.selected = NO;
+}
 
--(void)setNotificationSwitchStatus
-{
-    if (_item.notification == TextMessage) {
-        [_notificationSwitch setSelectedSegmentIndex:0];
-    } else if (_item.notification == PushNotification) {
-        [_notificationSwitch setSelectedSegmentIndex:1];
-    } else {
-        [_notificationSwitch setSelectedSegmentIndex:2];
-    }
+- (IBAction)offButtonPressed:(id)sender {
+    _item.active = NO;
+    _offButton.selected = YES;
+    _onButton.selected = NO;
 }
 
 
-// Get Status
 
--(void)getNotificationSwitchStatus
-{
-    if (_notificationSwitch.selectedSegmentIndex == 0) {
-        _item.notification = TextMessage;
-    } else if (_notificationSwitch.selectedSegmentIndex == 1) {
-        _item.notification = PushNotification;
-    } else {
-        _item.notification = None;
-    }
-}
 
 @end

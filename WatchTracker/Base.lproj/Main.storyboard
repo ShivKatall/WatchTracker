@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--With Me View Controller-->
+        <!--With Me View Controller - Watcher-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="WTWithMeViewController" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="d7I-cq-MmD"/>
+                    <navigationItem key="navigationItem" title="Watcher" id="d7I-cq-MmD"/>
                     <connections>
                         <outlet property="ButtonOne" destination="6It-Gd-QZz" id="cv1-vp-FYN"/>
                         <outlet property="buttonFive" destination="9m7-SR-3ym" id="gNg-F6-fad"/>
@@ -100,40 +100,35 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="21l-rg-A8D">
-                                        <rect key="frame" x="45" y="49" width="201" height="29"/>
-                                        <segments>
-                                            <segment title="Text"/>
-                                            <segment title="Push"/>
-                                            <segment title="None"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-da-IQQ">
-                                        <rect key="frame" x="40" y="20" width="93" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-Zb-S9V">
                                         <rect key="frame" x="133" y="423" width="55" height="29"/>
-                                        <state key="normal" image="on">
+                                        <state key="normal" title="On" image="on">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="on2"/>
+                                        <connections>
+                                            <action selector="onButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="gRy-9i-v61"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-OC-BeC">
                                         <rect key="frame" x="202" y="423" width="52" height="29"/>
-                                        <state key="normal" image="off1">
+                                        <state key="normal" title="Off" image="off1">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="off 2"/>
+                                        <connections>
+                                            <action selector="offButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="Ex7-XY-IE7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMF-E2-5Cn">
                                         <rect key="frame" x="67" y="460" width="187" height="53"/>
-                                        <state key="normal" title="Button" image="Add 1">
+                                        <state key="normal" title="Save" image="Add 1">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" image="Add 2"/>
+                                        <connections>
+                                            <segue destination="t3W-jK-NbV" kind="unwind" identifier="saveExitSegue" unwindAction="saveExitSegue:" id="wYv-aI-tT1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="itemTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUK-iJ-6Ja">
                                         <rect key="frame" x="75" y="351" width="83" height="24"/>
@@ -177,13 +172,21 @@
                             <constraint firstItem="OrU-cd-8RJ" firstAttribute="leading" secondItem="S05-n9-qI8" secondAttribute="leading" id="rda-l5-rsV"/>
                         </constraints>
                     </scrollView>
-                    <navigationItem key="navigationItem" id="9Fn-eV-DZX"/>
+                    <navigationItem key="navigationItem" id="9Fn-eV-DZX">
+                        <barButtonItem key="leftBarButtonItem" image="Back arrow" id="7mo-gS-Zu8">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="t3W-jK-NbV" kind="unwind" identifier="backExitSegue" unwindAction="backExitSegue:" id="2hu-UY-goj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="notificationSwitch" destination="21l-rg-A8D" id="bJU-Nq-It9"/>
-                        <outlet property="statusBubble" destination="tW2-vp-e6C" id="nCS-E8-iw2"/>
+                        <outlet property="offButton" destination="fK1-OC-BeC" id="86h-XJ-Oci"/>
+                        <outlet property="onButton" destination="fXo-Zb-S9V" id="KtW-6X-stk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njz-cw-GRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="t3W-jK-NbV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1162" y="13"/>
         </scene>
@@ -209,6 +212,7 @@
     <resources>
         <image name="Add 1" width="370" height="87"/>
         <image name="Add 2" width="370" height="87"/>
+        <image name="Back arrow" width="19" height="35"/>
         <image name="C-OFF" width="84" height="84"/>
         <image name="Orange" width="368" height="140"/>
         <image name="camera 1" width="372" height="372"/>

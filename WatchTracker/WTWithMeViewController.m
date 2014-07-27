@@ -89,4 +89,16 @@
     }
 }
 
+#pragma mark - Empty Segue Methods
+
+-(IBAction)backExitSegue:(UIStoryboardSegue *)sender
+{
+    // Empty method for Exit Segue functionality.
+}
+
+-(IBAction)saveExitSegue:(UIStoryboardSegue *)sender
+{
+    // Empty method for Exit Segue functionality.
+}
+
 @end
