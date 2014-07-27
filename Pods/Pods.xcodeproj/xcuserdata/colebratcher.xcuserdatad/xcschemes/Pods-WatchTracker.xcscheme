@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7DB440682D2F462F95BDA022"
+               BlueprintIdentifier = "B5167985DFC146E28BD2B21F"
                BuildableName = "libPods-WatchTracker.a"
                BlueprintName = "Pods-WatchTracker"
                ReferencedContainer = "container:Pods.xcodeproj">

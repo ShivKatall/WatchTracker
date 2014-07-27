@@ -1,0 +1,5 @@
+#include "Pods-WatchTracker-CFShareCircle.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/CFShareCircle" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ALRadial" "${PODS_ROOT}/Headers/CFShareCircle" "${PODS_ROOT}/Headers/MKMapView-ZoomLevel" "${PODS_ROOT}/Headers/TJLButtonView"
+OTHER_LDFLAGS = -ObjC ${PODS_WATCHTRACKER_CFSHARECIRCLE_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

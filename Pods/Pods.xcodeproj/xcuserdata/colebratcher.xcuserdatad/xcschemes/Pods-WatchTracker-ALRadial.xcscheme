@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8950C34A789E4AEA84CE1552"
-               BuildableName = "libPods-WatchTracker-TJLButtonView.a"
-               BlueprintName = "Pods-WatchTracker-TJLButtonView"
+               BlueprintIdentifier = "57BC98DF94C74C549BD6E652"
+               BuildableName = "libPods-WatchTracker-ALRadial.a"
+               BlueprintName = "Pods-WatchTracker-ALRadial"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

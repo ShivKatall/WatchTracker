@@ -1,10 +1,10 @@
 PODS:
-  - TJLButtonView (1.0.1)
+  - ALRadial (0.1.0)
 
 DEPENDENCIES:
-  - TJLButtonView (~> 1.0)
+  - ALRadial (~> 0.1.0)
 
 SPEC CHECKSUMS:
-  TJLButtonView: db3ca93e4c651fcaf390238fb4485635f6df35b9
+  ALRadial: be87a8fbf858b7da74bae174aaf8300cd482e7a5
 
 COCOAPODS: 0.33.1

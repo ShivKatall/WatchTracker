@@ -3,7 +3,7 @@
 
 target "WatchTracker" do
 
-pod 'TJLButtonView', '~> 1.0'
+pod 'ALRadial', '~> 0.1.0'
 
 end
 
