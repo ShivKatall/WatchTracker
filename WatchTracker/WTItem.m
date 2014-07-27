@@ -14,7 +14,9 @@
      activeStatus:(BOOL)active
      withMeStatus:(BOOL)withMe
  importanceStatus:(Importance)importance
-notificationStatus:(Notification)notification; {
+notificationStatus:(Notification)notification
+itemImage:(UIImage*)image
+; {
     
     self = [super init];
     
@@ -24,6 +26,7 @@ notificationStatus:(Notification)notification; {
         self.withMe = withMe;
         self.importance = importance;
         self.notification = notification;
+         self.image = image; 
     }
     return self;
 }

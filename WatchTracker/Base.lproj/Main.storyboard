@@ -96,6 +96,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectPhotos:" destination="F6G-7a-hI3" eventType="touchUpInside" id="Eo8-Xu-djh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="311-yv-MxH">
                                 <rect key="frame" x="133" y="364" width="55" height="29"/>
@@ -127,12 +130,6 @@
                                     <segue destination="t3W-jK-NbV" kind="unwind" identifier="saveExitSegue" unwindAction="saveExitSegue:" id="YhU-dg-420"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="itemTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Y-zK-lDk">
-                                <rect key="frame" x="75" y="292" width="83" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orange" translatesAutoresizingMaskIntoConstraints="NO" id="rZ6-XJ-qDZ">
                                 <rect key="frame" x="77" y="205" width="165" height="70"/>
                             </imageView>
@@ -154,6 +151,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHQ-zX-Eb1">
+                                <rect key="frame" x="67" y="293" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ItemTitle">
+                                    <color key="titleColor" red="0.015686275437474251" green="0.011764707043766975" blue="0.0078431377187371254" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -166,6 +171,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="itemImage" destination="FiC-GW-H0Z" id="j4i-fw-gW6"/>
                         <outlet property="offButton" destination="hGM-Gi-67X" id="yG1-UG-cpi"/>
                         <outlet property="onButton" destination="311-yv-MxH" id="8c5-eS-1FZ"/>
                     </connections>

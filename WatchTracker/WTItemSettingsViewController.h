@@ -11,7 +11,9 @@
 
 
 @interface WTItemSettingsViewController : UIViewController <UINavigationBarDelegate>
-
+- (IBAction)selectPhotos:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *itemImage;
+@property(strong , nonatomic)UIImage *image;
 @property (nonatomic, strong) WTItem *item;
 
 @end

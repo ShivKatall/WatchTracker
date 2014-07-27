@@ -46,14 +46,22 @@
         _onButton.selected = NO;
         _offButton.selected = YES;
     }
+    
+    if(_item.image != nil){
+        [_itemImage setBackgroundImage: _item.image forState:UIControlStateNormal];
+    }
 }
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"saveExitSegue"]) {
         WTWithMeViewController *destinationViewController = [segue destinationViewController];
 
+        _item.image = _image;
+
         destinationViewController.camera = _item;
+        
     }
 }
 
@@ -74,4 +82,26 @@
 
 
 
+- (IBAction)selectPhotos:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    _image  = info[UIImagePickerControllerEditedImage];
+    [_itemImage setBackgroundImage: _image forState:UIControlStateNormal];
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
 @end
