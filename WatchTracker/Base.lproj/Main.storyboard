@@ -100,7 +100,6 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="camera:" destination="F6G-7a-hI3" eventType="touchUpInside" id="W4S-xc-PrM"/>
                                             <action selector="selectPhotos:" destination="F6G-7a-hI3" eventType="touchUpInside" id="wrc-l4-jNZ"/>
                                         </connections>
                                     </button>
@@ -170,13 +169,30 @@
                     <navigationItem key="navigationItem" id="9Fn-eV-DZX"/>
                     <connections>
                         <outlet property="itemImage" destination="tW2-vp-e6C" id="Xnf-wN-5Qi"/>
-                        <outlet property="selectPhotos" destination="tW2-vp-e6C" id="f2W-og-xGV"/>
                         <outlet property="statusBubble" destination="tW2-vp-e6C" id="nCS-E8-iw2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njz-cw-GRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1162" y="13"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TPu-6I-AwE">
+            <objects>
+                <viewController id="wWq-P7-6lf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pT9-XK-ZEM"/>
+                        <viewControllerLayoutGuide type="bottom" id="vXR-sL-FhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zey-um-a9A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KW-Os-VGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565" y="21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0nx-5r-sYC">
