@@ -82,96 +82,78 @@
             <objects>
                 <viewController id="F6G-7a-hI3" customClass="WTItemSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FbI-Ma-PdS"/>
-                        <viewControllerLayoutGuide type="bottom" id="B8O-1h-ii2"/>
+                        <viewControllerLayoutGuide type="top" id="Hdr-V8-qVF"/>
+                        <viewControllerLayoutGuide type="bottom" id="0XV-7A-6di"/>
                     </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="S05-n9-qI8">
+                    <view key="view" contentMode="scaleToFill" id="mWk-OF-mNL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrU-cd-8RJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW2-vp-e6C" customClass="WTStatusBubble">
-                                        <rect key="frame" x="74" y="122" width="172" height="172"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" backgroundImage="camera 1">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-Zb-S9V">
-                                        <rect key="frame" x="133" y="423" width="55" height="29"/>
-                                        <state key="normal" title="On" image="on">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="on2"/>
-                                        <connections>
-                                            <action selector="onButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="gRy-9i-v61"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK1-OC-BeC">
-                                        <rect key="frame" x="202" y="423" width="52" height="29"/>
-                                        <state key="normal" title="Off" image="off1">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="off 2"/>
-                                        <connections>
-                                            <action selector="offButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="Ex7-XY-IE7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMF-E2-5Cn">
-                                        <rect key="frame" x="67" y="460" width="187" height="53"/>
-                                        <state key="normal" title="Save" image="Save 1">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="Add 2"/>
-                                        <connections>
-                                            <segue destination="t3W-jK-NbV" kind="unwind" identifier="saveExitSegue" unwindAction="saveExitSegue:" id="wYv-aI-tT1"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="itemTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUK-iJ-6Ja">
-                                        <rect key="frame" x="75" y="351" width="83" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orange" translatesAutoresizingMaskIntoConstraints="NO" id="55E-j9-Jk1">
-                                        <rect key="frame" x="77" y="264" width="165" height="70"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serial #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou1-y7-kIt">
-                                        <rect key="frame" x="87" y="279" width="83" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="serialLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ5-wJ-R8l">
-                                        <rect key="frame" x="90" y="308" width="80" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.69019609689712524" green="0.87450987100601196" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-Pa-4xI">
-                                        <rect key="frame" x="189" y="266" width="53" height="65"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="AUX-5Q-deT"/>
-                                    <constraint firstAttribute="height" constant="568" id="uqf-4t-4aA"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-GW-H0Z" customClass="WTStatusBubble">
+                                <rect key="frame" x="74" y="63" width="172" height="172"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="camera 1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="311-yv-MxH">
+                                <rect key="frame" x="133" y="364" width="55" height="29"/>
+                                <state key="normal" title="On" image="on">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="on2"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="pee-hb-5CH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGM-Gi-67X">
+                                <rect key="frame" x="202" y="364" width="52" height="29"/>
+                                <state key="normal" title="Off" image="off1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="off 2"/>
+                                <connections>
+                                    <action selector="offButtonPressed:" destination="F6G-7a-hI3" eventType="touchUpInside" id="hYP-RC-Tid"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFV-PQ-85C">
+                                <rect key="frame" x="67" y="401" width="187" height="53"/>
+                                <state key="normal" title="Save" image="Save 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="Add 2"/>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="itemTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Y-zK-lDk">
+                                <rect key="frame" x="75" y="292" width="83" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orange" translatesAutoresizingMaskIntoConstraints="NO" id="rZ6-XJ-qDZ">
+                                <rect key="frame" x="77" y="205" width="165" height="70"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serial #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWB-Xk-z47">
+                                <rect key="frame" x="87" y="220" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="serialLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvk-Cb-tD6">
+                                <rect key="frame" x="90" y="249" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.69019609689999994" green="0.87450987099999999" blue="0.93333339689999995" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osm-MX-FHa">
+                                <rect key="frame" x="189" y="207" width="53" height="65"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="OrU-cd-8RJ" secondAttribute="trailing" id="Cgu-77-mTE"/>
-                            <constraint firstItem="OrU-cd-8RJ" firstAttribute="top" secondItem="S05-n9-qI8" secondAttribute="top" id="aOC-vC-Vj0"/>
-                            <constraint firstItem="B8O-1h-ii2" firstAttribute="top" secondItem="OrU-cd-8RJ" secondAttribute="bottom" id="aeS-Re-7rh"/>
-                            <constraint firstItem="OrU-cd-8RJ" firstAttribute="leading" secondItem="S05-n9-qI8" secondAttribute="leading" id="rda-l5-rsV"/>
-                        </constraints>
-                    </scrollView>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
                     <navigationItem key="navigationItem" id="9Fn-eV-DZX">
                         <barButtonItem key="leftBarButtonItem" image="Back arrow" id="7mo-gS-Zu8">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -180,10 +162,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="offButton" destination="fK1-OC-BeC" id="86h-XJ-Oci"/>
-                        <outlet property="onButton" destination="fXo-Zb-S9V" id="KtW-6X-stk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Njz-cw-GRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="t3W-jK-NbV" userLabel="Exit" sceneMemberID="exit"/>
