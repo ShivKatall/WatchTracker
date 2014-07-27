@@ -32,31 +32,37 @@
                                      activeStatus:YES
                                      withMeStatus:YES
                                  importanceStatus:Low
-                               notificationStatus:None];
+                               notificationStatus:None
+               itemImage:nil
+               ];
     
     _keys = [[WTItem alloc] initWithName:@"Keys"
                                    activeStatus:YES
                                    withMeStatus:YES
                                importanceStatus:Medium
-                             notificationStatus:PushNotification];
+                             notificationStatus:PushNotification
+             itemImage:nil];
     
     _glasses = [[WTItem alloc] initWithName:@"Glasses"
                                       activeStatus:NO
                                       withMeStatus:NO
                                   importanceStatus:Low
-                                notificationStatus:None];
+                                notificationStatus:None
+                itemImage:nil];
     
     _wallet = [[WTItem alloc] initWithName:@"Wallet"
                                      activeStatus:YES
                                      withMeStatus:NO
                                  importanceStatus:Medium
-                               notificationStatus:PushNotification];
+                               notificationStatus:PushNotification
+               itemImage:nil];
     
     _baby = [[WTItem alloc] initWithName:@"Baby"
                                    activeStatus:YES
                                    withMeStatus:NO
                                importanceStatus:High
-                             notificationStatus:TextMessage];
+                             notificationStatus:TextMessage
+             itemImage:nil];
     
 
 

@@ -16,12 +16,14 @@
 @property (nonatomic) BOOL withMe;
 @property (nonatomic) Importance importance;
 @property (nonatomic) Notification notification;
+@property (nonatomic) UIImage *image;
 
 -(id)initWithName:(NSString*)name
      activeStatus:(BOOL)active
      withMeStatus:(BOOL)withMe
  importanceStatus:(Importance)importance
-notificationStatus:(Notification)notification;
+notificationStatus:(Notification)notification
+itemImage :(UIImage*)image;
 
 @end
 
