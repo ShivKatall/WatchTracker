@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kR5-BF-cyr">
     <dependencies>
+<<<<<<< HEAD
+        <deployment defaultVersion="1792" identifier="iOS"/>
+=======
+>>>>>>> 93ad3f27be3fc056950cceee05a31951273817fe
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -222,4 +226,10 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+<<<<<<< HEAD
+    <inferredMetricsTieBreakers>
+        <segue reference="iCb-pC-yjV"/>
+    </inferredMetricsTieBreakers>
+=======
+>>>>>>> 93ad3f27be3fc056950cceee05a31951273817fe
 </document>
