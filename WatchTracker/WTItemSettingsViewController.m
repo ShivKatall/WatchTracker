@@ -14,8 +14,6 @@
 @interface WTItemSettingsViewController ()
 
 @property (weak, nonatomic) IBOutlet WTStatusBubble *statusBubble;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *activeSwitch;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *importanceSwitch;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *notificationSwitch;
 
 @end
@@ -26,10 +24,15 @@
 {
     [super viewDidLoad];
 
+    [[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back-button-image"]];
+    [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back-button-image"]];
+    
+    
+    
     [_statusBubble assignItemToBubble:_item];
-    [self setActiveSwitchStatus];
-    [self setImportanceSwitchStatus];
-    [self setNotificationSwitchStatus];   
+
+    [self setNotificationSwitchStatus];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,8 +51,6 @@
     if ([[segue identifier] isEqualToString:@"SaveSegue"]) {
         WTWithMeViewController *destinationViewController = [segue destinationViewController];
         
-        [self getActiveSwitchStatus];
-        [self getImportanceSwitchStatus];
         [self getNotificationSwitchStatus];
         
         destinationViewController.laptop = _item;
@@ -59,26 +60,6 @@
 # pragma mark - Model Control Code
 
 // Set Status
-
--(void)setActiveSwitchStatus
-{
-    if (_item.active == YES) {
-        [_activeSwitch setSelectedSegmentIndex:0];
-    } else {
-        [_activeSwitch setSelectedSegmentIndex:1];
-    }
-}
-
--(void)setImportanceSwitchStatus
-{
-    if (_item.importance == High) {
-        [_importanceSwitch setSelectedSegmentIndex:0];
-    } else if (_item.importance == Low) {
-        [_importanceSwitch setSelectedSegmentIndex:2];
-    } else {
-        [_importanceSwitch setSelectedSegmentIndex:1];
-    }
-}
 
 -(void)setNotificationSwitchStatus
 {
@@ -93,26 +74,6 @@
 
 
 // Get Status
-
--(void)getActiveSwitchStatus
-{
-    if (_activeSwitch.selectedSegmentIndex == 0) {
-        _item.active = YES;
-    } else {
-        _item.active = NO;
-    }
-}
-
--(void)getImportanceSwitchStatus
-{
-    if (_importanceSwitch.selectedSegmentIndex == 0) {
-        _item.importance = High;
-    } else if (_importanceSwitch.selectedSegmentIndex == 1) {
-        _item.importance = Medium;
-    } else {
-        _item.importance = Low;
-    }
-}
 
 -(void)getNotificationSwitchStatus
 {
